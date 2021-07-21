@@ -60,6 +60,7 @@ nav a {
 
 .about {
     display: flex;
+    justify-items: center;
 }
 
 .about p {
@@ -165,6 +166,7 @@ nav a {
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
 }
 
 /* ------------------------------- SKILL CARDS ------------------------------ */
@@ -235,6 +237,7 @@ nav a {
 .contact {
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     padding-right: 100px;
 }
 

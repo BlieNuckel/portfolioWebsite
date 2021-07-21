@@ -1,27 +1,25 @@
-document.getElementById("projects-link").addEventListener("click", function () {})
+// document.getElementById("projects-link").addEventListener("click", function () {})
 
-document.getElementById("about-link").addEventListener("click", function () {})
+// document.getElementById("about-link").addEventListener("click", function () {})
 
-document.getElementById("contact-link").addEventListener("click", function () {})
+// document.getElementById("contact-link").addEventListener("click", function () {})
 
 window.addEventListener('scroll', (event) => {
     hashUpdater()
 })
 
 function hashUpdater() {
-    let oldHash = window.location.hash
+    let newHash = ''
 
     if (document.documentElement.scrollTop < 578) {
-        window.location.hash = 'about'
+        newHash = 'about'
     } else if (document.documentElement.scrollTop > 578 && document.documentElement.scrollTop < 1813) {
-        window.location.hash = 'projects'
+        newHash = 'projects'
     } else if (document.documentElement.scrollTop > 1813) {
-        window.location.hash = 'contact'
+        newHash = 'contact'
     }
 
-    if (oldHash != window.location.hash) {
-        changeActive(window.location.hash.slice(1) + '-link')
-    }
+    changeActive(newHash + '-link')
 }
 
 function changeActive(id) {
