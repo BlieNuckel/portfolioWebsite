@@ -18,13 +18,11 @@ body {
 }
 
 main {
-    margin: auto;
-    max-width: 70vw;
     color: white;
     padding: 124px 7%;
 }
 
-@media (min-aspect-ratio: 17/9) {
+@media (min-aspect-ratio: 20/9) {
     main {
         max-width: 55vw;
         margin: auto;
@@ -33,7 +31,7 @@ main {
     }
 }
 
-@media (min-aspect-ratio 21/9) {
+@media (min-aspect-ratio: 21/9) {
     main {
         max-width: 45vw;
         margin: auto;
@@ -80,6 +78,7 @@ nav a {
 
 .about {
     display: flex;
+    flex-flow: row wrap;
     justify-items: center;
 }
 
@@ -93,7 +92,7 @@ nav a {
     margin-bottom: 10px;
     margin-top: 100px;
     font-size: 55pt;
-    text-shadow: 0px 2px 10px black;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .big-about-txt {
@@ -138,10 +137,6 @@ nav a {
 
 .project-card-container div {
     flex: 0 32.5%;
-    background: url("/Assets/uFood Background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 3px;
 }
 
@@ -172,6 +167,41 @@ nav a {
 
 /* ------------------------------ PROJECT ITEMS ----------------------------- */
 .projects .item1 {
+    background: url("/Assets/uFood Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects .item2 {
+    background: url("/Assets/uFood Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects .item3 {
+    background: url("/Assets/uFood Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects .item4 {
+    background: url("/Assets/uFood Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects .item5 {
+    background: url("/Assets/uFood Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects .item6 {
     background: url("/Assets/uFood Background.png");
     background-size: cover;
     background-position: center;
@@ -388,6 +418,10 @@ nav a {
 /* --------------------------------- SHADOWS -------------------------------- */
 .shadow-0-2-10-black {
     box-shadow: 0px 2px 10px black;
+}
+
+.shadow-0-3-8-lowblack {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* ------------------------------- NAV ACTIVE ------------------------------- */
