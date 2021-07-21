@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #232323;
     font-family: 'Montserrat', sans-serif;
@@ -322,7 +326,14 @@ nav a {
     color: #707070;
 }
 
-.right .contact-form input {}
+.right .contact-form input {
+    border: 0px solid transparent;
+    border-bottom: 1px solid black;
+}
+
+.right .contact-form input:focus {
+    outline: none;
+}
 
 .right .full-name {}
 
@@ -344,14 +355,49 @@ nav a {
 }
 
 /* ------------------------------- NAV ACTIVE ------------------------------- */
-.active::after {
+.project-nav {
+    --after-height: 0px;
+}
+
+.about-nav {
+    --after-height: 4px;
+}
+
+.contact-nav {
+    --after-height: 0px;
+}
+
+.project-nav::after {
     display: inline-block;
     content: '';
-    height: 4px;
+    height: var(--after-height);
     width: 100%;
     margin-bottom: 9px;
     background: #C5283D;
     border-radius: 5px;
+    transition: height 0.2s;
+}
+
+.about-nav::after {
+    display: inline-block;
+    content: '';
+    height: var(--after-height);
+    width: 100%;
+    margin-bottom: 9px;
+    background: #C5283D;
+    border-radius: 5px;
+    transition: height 0.2s;
+}
+
+.contact-nav::after {
+    display: inline-block;
+    content: '';
+    height: var(--after-height);
+    width: 100%;
+    margin-bottom: 9px;
+    background: #C5283D;
+    border-radius: 5px;
+    transition: height 0.2s;
 }
 
 /* ------------------------------ SECTION TITLE ----------------------------- */
