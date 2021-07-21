@@ -18,8 +18,28 @@ body {
 }
 
 main {
+    margin: auto;
+    max-width: 70vw;
     color: white;
     padding: 124px 7%;
+}
+
+@media (min-aspect-ratio: 17/9) {
+    main {
+        max-width: 55vw;
+        margin: auto;
+        color: white;
+        padding: 124px 7%;
+    }
+}
+
+@media (min-aspect-ratio 21/9) {
+    main {
+        max-width: 45vw;
+        margin: auto;
+        color: white;
+        padding: 124px 7%;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -325,17 +345,23 @@ nav a {
 .right .contact-form {
     display: flex;
     flex-flow: column nowrap;
-    width: 70%;
+    width: 65%;
     color: #707070;
 }
 
 .right .contact-form input {
     border: 0px solid transparent;
     border-bottom: 1px solid black;
+    margin-bottom: 40px;
 }
 
 .right .contact-form input:focus {
     outline: none;
+}
+
+.right .contact-form label {
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .right .full-name {}
@@ -344,9 +370,16 @@ nav a {
 
 .right .phone {}
 
-.right .message {}
+.right .message {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
 
-.right .submit-button {}
+}
+
+.right .submit-button {
+    margin-top: 10px;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                MISC CLASSES                                */
