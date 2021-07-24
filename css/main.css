@@ -703,6 +703,54 @@ nav a {
     }
 }
 
+/* ----------------------------- BACKGROUND IMGs ---------------------------- */
+.code-background {
+    position: absolute;
+    z-index: -1;
+    filter: opacity(0.05);
+    margin: 0;
+    right: 58vw;
+    height: 800px;
+}
+
+@media screen {}
+
+.dots-projects {
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+    margin-top: -65px;
+    right: 21.1vw;
+    width: 400px;
+}
+
+.dots-skills {
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+    margin-top: 150px;
+    left: 20vw;
+    width: 400px;
+}
+
+.dots-contact-top {
+    position: absolute;
+    z-index: -1;
+    width: 375px;
+    margin: 0;
+    margin-top: -40px;
+    left: 48vw;
+}
+
+.dots-contact-bot {
+    position: absolute;
+    z-index: -1;
+    width: 375px;
+    margin: 0;
+    margin-top: 395px;
+    right: 30vw;
+}
+
 /* ---------------------------------- OTHER --------------------------------- */
 .section-spacer {
     height: 20vh;
