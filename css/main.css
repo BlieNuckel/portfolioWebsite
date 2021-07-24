@@ -79,15 +79,6 @@ main {
     }
 }
 
-/* @media (min-aspect-ratio: 16/9) and (min-width: 1921px) {
-    main {
-        max-width: 55vw;
-        margin: auto;
-        color: white;
-        padding: 124px 20vw;
-    }
-} */
-
 @media (min-aspect-ratio: 17/7) {
     main {
         margin: auto;
