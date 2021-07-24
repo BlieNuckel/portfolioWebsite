@@ -36,7 +36,7 @@ main {
 
 @media (min-aspect-ratio: 16/9) and (min-width: 1921px) {
     main {
-        max-width: 55vw;
+        max-width: 40vw;
         margin: auto;
         color: white;
         padding: 124px 20vw;
@@ -188,6 +188,7 @@ nav a {
         flex-flow: column wrap;
         justify-content: center;
         margin: auto;
+        margin-top: 35px;
         max-width: 500px;
     }
 }
@@ -196,6 +197,7 @@ nav a {
     .project-card-container {
         display: flex;
         flex-flow: row wrap;
+        margin-top: 0;
     }
 }
 
@@ -336,8 +338,8 @@ nav a {
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
-        width: 353px;
-        height: 353px;
+        width: auto;
+        max-width: 353px;
         background-color: #2B2B2B;
         border-radius: 3px;
         margin: 10px 0;
