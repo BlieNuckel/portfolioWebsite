@@ -25,7 +25,7 @@ function activeSectionUpdater() {
                 newActive = element.id
             }
         } else {
-            if (rect['y'] <= 0) {
+            if (rect['y'] <= 30) {
                 newActive = element.id
             }
         }
