@@ -5,25 +5,38 @@
 // document.getElementById("contact-link").addEventListener("click", function () {})
 
 window.addEventListener('scroll', (event) => {
-    hashUpdater()
+    activeSectionUpdater()
 })
 
-function hashUpdater() {
-    let newHash = ''
+function activeSectionUpdater() {
 
-    if (document.documentElement.scrollTop < 578) {
-        newHash = 'about'
-    } else if (document.documentElement.scrollTop > 578 && document.documentElement.scrollTop < 1813) {
-        newHash = 'projects'
-    } else if (document.documentElement.scrollTop > 1813) {
-        newHash = 'contact'
-    }
+    let newActive = ''
+    let elems = []
 
-    changeActive(newHash + '-link')
+    elems.push(document.getElementById("about"))
+    elems.push(document.getElementById("projects"))
+    elems.push(document.getElementById("contact"))
+
+    elems.forEach(element => {
+        const rect = element.getBoundingClientRect()
+
+        if (element.id === "contact") {
+            if (rect['y'] <= window.innerHeight / 2) {
+                newActive = element.id
+            }
+        } else {
+            if (rect['y'] <= 0) {
+                newActive = element.id
+            }
+        }
+
+
+    });
+
+    changeActive(newActive + '-link')
 }
 
 function changeActive(id) {
-    console.log(id)
     let elementList = ["projects-link", "about-link", "contact-link"]
 
     elementList.forEach(element => {

@@ -105,20 +105,15 @@ nav a {
 }
 
 .about-img {
-    border-radius: 10px;
-    background-image: url("/Assets/logo-javascript-svgrepo-com.svg");
-    height: 490px;
+    height: 400px;
     width: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 600px 600px;
 }
 
 .about-txt {
     width: 60%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 814px) {
     .about {
         display: flex;
         flex-flow: column-reverse nowrap;
@@ -149,7 +144,7 @@ nav a {
     align-content: space-between;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .project-card-container {
         display: flex;
         flex-flow: column wrap;
@@ -160,6 +155,7 @@ nav a {
 .project-card-container div {
     flex: 0 32.5%;
     border-radius: 3px;
+    min-width: 325px;
 }
 
 .project-card-container>* {
@@ -185,6 +181,7 @@ nav a {
 .project-card-text h2 {
     margin: 0;
     margin-bottom: 0.3em;
+    width: 58%;
 }
 
 /* ------------------------------ PROJECT ITEMS ----------------------------- */
@@ -238,10 +235,9 @@ nav a {
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    justify-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 814px) {
     .skill-card-container {
         margin-top: 2em;
         display: flex;
@@ -260,9 +256,10 @@ nav a {
     height: 353px;
     background-color: #2B2B2B;
     border-radius: 3px;
+    margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 814px) {
     .skill-card-container .items {
         display: flex;
         flex-flow: column nowrap;
@@ -325,24 +322,51 @@ nav a {
     background-color: #EFD81D;
 }
 
+/* ------------------------------- SKILL ITEMS ------------------------------ */
+
+@media screen and (min-width: 815px) {
+    .skills .item1 {
+        margin-right: 10px;
+    }
+
+    .skills .item2 {
+        margin: 0 10px;
+    }
+
+    .skills .item3 {
+        margin-left: 10px;
+    }
+}
+
 /* -------------------------------------------------------------------------- */
 /*                               CONTACT SECTION                              */
 /* -------------------------------------------------------------------------- */
 
 .contact {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
     justify-items: center;
-    padding-right: 100px;
+    align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1220px) {
     .contact {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
         justify-items: center;
-        padding-right: 5%;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (min-width: 815px) {
+    .contact {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: unset;
     }
 }
 
@@ -364,7 +388,7 @@ nav a {
     padding-bottom: 3%;
 }
 
-@media screen and (min-width: 481) {
+@media screen and (min-width: 815px) {
     .contact .left {
         display: flex;
         flex-flow: column nowrap;
@@ -428,15 +452,20 @@ nav a {
     align-items: center;
     justify-content: space-between;
 
-    height: auto;
-    width: auto;
+
+    max-height: 700px;
+    max-width: 500px;
+
+    height: 700px;
+    width: 100%;
+
 
     background-color: white;
     border-radius: 8px;
     padding-bottom: 25px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .contact .right {
         display: flex;
         flex-flow: column nowrap;
@@ -569,6 +598,7 @@ nav a {
 
 /* ------------------------------ SECTION TITLE ----------------------------- */
 .section-title {
+    display: block;
     width: max-content;
     font-weight: 800;
     font-size: 2.5em;
@@ -589,26 +619,14 @@ nav a {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 814px) {
     .section-title {
-        width: fit-content;
+        width: max-content;
         font-weight: 800;
         font-size: 2.5em;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         height: 60px;
-    }
-
-    .section-title::after {
-        position: relative;
-        z-index: -1;
-        display: inline-block;
-        content: '';
-        height: 8px;
-        width: 100%;
-        bottom: 30px;
-        background: #C5283D;
-        border-radius: 5px;
-        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
     }
 }
 
