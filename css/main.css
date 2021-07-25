@@ -478,7 +478,7 @@ nav a {
     }
 }
 
-@media screen and (min-width: 815px) {
+@media screen and (min-width: 970px) {
     .contact {
         display: flex;
         flex-flow: row nowrap;
@@ -506,7 +506,7 @@ nav a {
     padding-bottom: 3%;
 }
 
-@media screen and (min-width: 815px) {
+@media screen and (min-width: 970px) {
     .contact .left {
         display: flex;
         flex-flow: column nowrap;
@@ -754,17 +754,16 @@ nav a {
     z-index: -1;
     filter: opacity(0.05);
     margin: 0;
-    right: 58vw;
+    right: 1vw;
     height: 50vh;
 }
-
-@media screen {}
 
 .dots-projects {
     position: absolute;
     margin: 0;
     z-index: -1;
-    right: 21.1vw;
+    margin-top: 60px;
+    right: 16vw;
     width: 400px;
 }
 
@@ -772,8 +771,8 @@ nav a {
     position: absolute;
     margin: 0;
     z-index: -1;
-    margin-top: 150px;
-    left: 20vw;
+    margin-top: 55px;
+    left: 60vw;
     width: 400px;
 }
 
@@ -782,7 +781,8 @@ nav a {
     z-index: -1;
     width: 375px;
     margin: 0;
-    left: 48vw;
+    margin-top: -100px;
+    left: 60vw;
 }
 
 .dots-contact-bot {
@@ -790,8 +790,143 @@ nav a {
     z-index: -1;
     width: 375px;
     margin: 0;
-    margin-top: 395px;
+    margin-top: 420px;
     right: 30vw;
+}
+
+@media (min-width: 376px) {
+    .code-background {
+        right: 35vw;
+    }
+
+    .dots-contact-top {
+        margin-top: -60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .code-background {
+        right: 50vw;
+    }
+
+    .dots-projects {
+        margin-top: 80px;
+        right: 8vw;
+    }
+
+    .dots-skills {
+        margin-top: 240px;
+        left: 10vw;
+    }
+
+    .dots-contact-bot {
+        margin-top: 420px;
+        right: 50vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .code-background {
+        right: 58vw;
+    }
+
+    .dots-projects {
+        right: 21.1vw;
+    }
+
+    .dots-skills {
+        margin-top: 150px;
+        left: 20vw;
+    }
+
+    .dots-contact-top {
+        left: 48vw;
+    }
+
+    .dots-contact-bot {
+        margin-top: 395px;
+        right: 30vw;
+    }
+}
+
+@media (min-width: 970px) {
+    .code-background {
+        right: 65vw;
+    }
+
+    .dots-projects {
+        margin-top: -60px;
+        right: 1vw;
+    }
+
+    .dots-skills {
+        margin-top: 120px;
+        left: 0.5vw;
+    }
+
+    .dots-contact-bot {
+        margin-top: 420px;
+        right: 28vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .code-background {
+        right: 70vw;
+    }
+
+    .dots-contact-top {
+        left: 59vw;
+    }
+
+    .dots-contact-bot {
+        margin-top: 420px;
+        right: 32vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    .code-background {
+        right: 65vw;
+    }
+
+    .dots-projects {
+        margin-top: 0px;
+        right: 10vw;
+    }
+
+    .dots-skills {
+        margin-top: 180px;
+        left: 6vw;
+    }
+
+    .dots-contact-top {
+        left: 62vw;
+    }
+}
+
+@media (min-width: 2000px) {
+    .code-background {
+        right: 60vw;
+    }
+
+    .dots-projects {
+        right: 22vw;
+    }
+
+    .dots-skills {
+        margin-top: 180px;
+        left: 24vw;
+    }
+
+    .dots-contact-top {
+        left: 59.5vw;
+    }
+
+    .dots-contact-bot {
+        margin-top: 420px;
+        right: 36.5vw;
+    }
 }
 
 /* ---------------------------------- OTHER --------------------------------- */
