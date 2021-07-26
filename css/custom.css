@@ -69,7 +69,7 @@ main {
   main {
     margin: auto;
     color: white;
-    padding: 124px 27vw;
+    padding: 124px 28vw;
   }
 }
 @media (min-aspect-ratio: 17/7) {
@@ -768,26 +768,6 @@ nav a {
     right: 50vw;
   }
 }
-@media (min-width: 970px) {
-  .code-background {
-    right: 65vw;
-  }
-
-  .dots-projects {
-    margin-top: -60px;
-    right: 1vw;
-  }
-
-  .dots-skills {
-    margin-top: 120px;
-    left: 0.5vw;
-  }
-
-  .dots-contact-bot {
-    margin-top: 420px;
-    right: 28vw;
-  }
-}
 @media (min-width: 1440px) {
   .code-background {
     right: 58vw;
@@ -809,6 +789,26 @@ nav a {
   .dots-contact-bot {
     margin-top: 395px;
     right: 30vw;
+  }
+}
+@media (min-width: 970px) {
+  .code-background {
+    right: 65vw;
+  }
+
+  .dots-projects {
+    margin-top: -60px;
+    right: 1vw;
+  }
+
+  .dots-skills {
+    margin-top: 120px;
+    left: 0.5vw;
+  }
+
+  .dots-contact-bot {
+    margin-top: 420px;
+    right: 28vw;
   }
 }
 @media (min-width: 1440px) {
@@ -867,20 +867,10 @@ nav a {
     right: 36.5vw;
   }
 }
-@media (min-width: 2375px) {
-  .dots-contact-top {
-    left: 56.5vw;
-  }
-
-  .dots-contact-bot {
-    margin-top: 420px;
-    right: 38.5vw;
-  }
-}
 /* ---------------------------------- OTHER --------------------------------- */
 .section-spacer {
   height: 20vh;
   width: 100%;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=custom.css.map */
