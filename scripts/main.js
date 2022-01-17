@@ -20,13 +20,13 @@ async function submitCall() {
     let subject = document.getElementById('subject').value
     let message = document.getElementById('messagetxt').value
 
-    let json = {fullName, email, subject, message}
+    let json = { fullName, email, subject, message }
 
     let response = null;
 
     if (fullName != '' && email != '' && subject != '' && message != '') {
         console.log('check passed')
-        response = await fetch('http://192.168.0.172:25569/emailsubmit', {
+        response = await fetch('https://portfolio-hook-handler.herokuapp.com/emailsubmit', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -34,8 +34,6 @@ async function submitCall() {
             body: JSON.stringify(json)
         })
     }
-
-    console.log(response)
 
 }
 

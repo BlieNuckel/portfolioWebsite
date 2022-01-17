@@ -69,7 +69,7 @@ main {
   main {
     margin: auto;
     color: white;
-    padding: 124px 28vw;
+    padding: 124px 26vw;
   }
 }
 @media (min-aspect-ratio: 17/7) {
@@ -219,23 +219,6 @@ nav a {
     margin-top: 0;
   }
 }
-.project-card-container div {
-  flex: 0 32.5%;
-  border-radius: 3px;
-  flex: 1;
-}
-
-@media screen and (min-width: 815px) {
-  .project-card-container div {
-    min-width: 320px;
-    flex: 1;
-  }
-}
-@media screen and (min-width: 1220px) {
-  .project-card-container div {
-    min-width: 350px;
-  }
-}
 .project-card-container > * {
   margin: 0.5em 0.2em;
 }
@@ -250,72 +233,54 @@ nav a {
   flex-flow: column;
   justify-content: center;
   height: 8em;
+  width: 60%;
   padding: 12% 0;
-  margin-left: 15px;
+  margin-left: 8px;
 }
 
 .project-card-text p {
   font-weight: 300;
   font-size: 10pt;
-  width: 58%;
   margin: 0;
 }
 
 .project-card-text h2 {
   margin: 0;
   margin-bottom: 0.3em;
-  width: 58%;
 }
 
 /* ------------------------------ PROJECT ITEMS ----------------------------- */
-.projects .item1 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.project-card-container .items {
+  flex: 0 32.5%;
+  border-radius: 3px;
+  width: 32%;
+  background-color: #232323;
+  border-left: 3px solid #C5283D;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.project-card-container .items .image {
+  width: 40%;
+}
+.project-card-container .items a {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+.project-card-container .items:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
-.projects .item2 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+@media screen and (max-width: 815px) {
+  .project-card-container .items {
+    width: auto;
+  }
 }
-
-.projects .item3 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.projects .item4 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.projects .item5 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.projects .item6 {
-  background: url("/Assets/uFood Background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
 /* -------------------------------------------------------------------------- */
 /*                                SKILL SECTION                               */
 /* -------------------------------------------------------------------------- */
@@ -384,6 +349,7 @@ nav a {
   text-align: center;
   font-size: 20pt;
   font-weight: 300;
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 .skills .bottom-bar {
@@ -587,6 +553,19 @@ nav a {
   outline: none;
   border: none;
   border-bottom: 1px solid black;
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .right .submit-button {
@@ -600,6 +579,16 @@ nav a {
   font-family: "Montserrat", sans-serif;
   font-size: 18pt;
   font-weight: 400;
+  text-align: center;
+}
+
+.submit-button:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.submit-button:active {
+  transform: scale(0.95);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -675,9 +664,9 @@ nav a {
   z-index: -1;
   display: inline-block;
   content: "";
-  height: 8px;
+  height: 4px;
   width: 100%;
-  bottom: 30px;
+  bottom: 35px;
   background: #C5283D;
   border-radius: 5px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
@@ -768,6 +757,26 @@ nav a {
     right: 50vw;
   }
 }
+@media (min-width: 970px) {
+  .code-background {
+    right: 65vw;
+  }
+
+  .dots-projects {
+    margin-top: -60px;
+    right: 1vw;
+  }
+
+  .dots-skills {
+    margin-top: 120px;
+    left: 0.5vw;
+  }
+
+  .dots-contact-bot {
+    margin-top: 420px;
+    right: 28vw;
+  }
+}
 @media (min-width: 1440px) {
   .code-background {
     right: 58vw;
@@ -789,26 +798,6 @@ nav a {
   .dots-contact-bot {
     margin-top: 395px;
     right: 30vw;
-  }
-}
-@media (min-width: 970px) {
-  .code-background {
-    right: 65vw;
-  }
-
-  .dots-projects {
-    margin-top: -60px;
-    right: 1vw;
-  }
-
-  .dots-skills {
-    margin-top: 120px;
-    left: 0.5vw;
-  }
-
-  .dots-contact-bot {
-    margin-top: 420px;
-    right: 28vw;
   }
 }
 @media (min-width: 1440px) {
@@ -865,6 +854,16 @@ nav a {
   .dots-contact-bot {
     margin-top: 420px;
     right: 36.5vw;
+  }
+}
+@media (min-width: 2375px) {
+  .dots-contact-top {
+    left: 56.5vw;
+  }
+
+  .dots-contact-bot {
+    margin-top: 420px;
+    right: 38.5vw;
   }
 }
 /* ---------------------------------- OTHER --------------------------------- */

@@ -181,7 +181,19 @@
     outline: none;
     border: none;
     border-bottom: 1px solid black;
+    resize: none;
+}
 
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 .right .submit-button {
@@ -195,6 +207,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18pt;
     font-weight: 400;
+    text-align: center;
 }
 
 .submit-button:hover {
