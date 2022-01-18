@@ -1,0 +1,19 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "website for my portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/BlieNuckel/portfolioWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlieNuckel/portfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/BlieNuckel/portfolioWebsite#readme"
+}
