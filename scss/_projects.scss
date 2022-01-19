@@ -55,16 +55,6 @@
     }
 }
 
-.project-card-container>* {
-    margin: 0.5em 0.2em;
-}
-
-@media screen and (min-width: 815px) and (max-width: 1218px) {
-    .project-card-container>* {
-        margin: 0.5em 0.2em;
-    }
-}
-
 .project-card-text {
     display: flex;
     flex-flow: column;
@@ -96,7 +86,7 @@
         background-color: #232323;
         border-left: 3px solid #C5283D;
         transition: transform 0.2s ease-in-out;
-
+        margin: 0.5em 0.2em;
 
         display: flex;
         flex-flow: row nowrap;
